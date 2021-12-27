@@ -1,209 +1,209 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>AMCROSS</title>
-    <style>
-      body,
-      html {
-        height: 100%;
-      }
-      .topnav {
-        background-color: rgb(255, 255, 255);
-        overflow: hidden;
-      }
 
-     /* Style the links inside the navigation bar */
-     .topnav a {
-        float: left;
-        color: #000000;
-        font-family: Roboto Condensed;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-        font-size: 17px;
-      }
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AMCROSS</title>
+  <style>
+    .hero-image {
+      /* The image used */
+      background-image: url("images/header2.jpg");
 
-      /* Change the color of links on hover */
-      .topnav a:hover {
-        background-color: rgb(187, 187, 187);
-        color: black;
-      }
+      /* Add the blur effect */
+      filter: blur(8px);
+      -webkit-filter: blur(8px);
 
-      /* Add a color to the active/current link */
-      .topnav a.active {
-        background-color: #e20a16;
-        color: white;
-      }
-      /* Right-aligned section inside the top navigation */
-      .topnav-right {
-        float: right;
-      }
-      /* The hero image */
-      .hero-image {
-        /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-        background-image: linear-gradient(
-            rgba(0, 0, 0, 0.5),
-            rgba(0, 0, 0, 0.5)
-          ),
-          url("./images/header.jpg");
+      /* Set a specific height */
+      height: 100vh;
 
-        /* Set a specific height */
-        height: 50%;
+      /* Create the parallax scrolling effect */
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
 
-        /* Position and center the image to scale nicely on all screens */
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        position: relative;
-      }
+    #scrolly {
+      margin-top: 100px;
+      background-image: url("./images/10.jpg");
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+      padding: 100px;
+      align-items: stretch;
+    }
+  </style>
+  <link rel="stylesheet" href="./css/page2.css">
+</head>
 
-      /* Place text in the middle of the image */
-      .hero-text {
-        text-align: center;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        color: white;
-      }
-      .light-box {
-        font-size: 5vw;
-        font-family: 'Merriweather', serif;
-        font-weight: 600;
-        text-align: center;
-        height: 200px;
-      }
-      .light-box .paragraf {
-        font-family: 'Roboto Condensed', sans-serif;
-        font-weight: 400;
-        text-align: left;
-        font-size: 25px;
-        max-width: 800px;
-        margin: 1em auto 1em auto;
-      }
-      .parallax {
-        /* The image used */
-        background-image: url("./images/10.jpg");
-
-        /* Set a specific height */
-        min-height: 500px;
-
-        /* Create the parallax scrolling effect */
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-      }
-      .parallax2 {
-        /* The image used */
-        background-image: url("./images/10.jpg");
-
-        /* Set a specific height */
-        min-height: 500px;
-
-        /* Create the parallax scrolling effect */
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-      }
-      .paralax-text {
-        height: 100px;
-        background-color: rgb(255, 255, 255);
-        font-family: 'Roboto Condensed', sans-serif;
-        font-size: 25px;
-        font-weight: 200;
-        padding: 30px;
-        text-align: center;
-      }
-      .video {
-        margin-top: 200px;
-      }
-    </style>
-  </head>
-  <body>
-    <nav>
+<body>
+  <header>
+    <nav id="navbar">
       <div class="topnav">
         <div class="topnav-right">
-          <a href="index.html">Latar Belakang</a>
-          <a  href="page2.html">Peningkatan Kapasitas</a>
-          <a class="active" href="page3.html">Harapan Kedepan</a>
+          <a href="index.html">
+            <button>
+              Latar Belakang
+            </button>
+          </a>
+          <a href="page2.html"><button class="active">
+              Peningkatan Kapasitas
+            </button></a>
+          <a href="page3.html">
+            <button>
+              Harapan Kedepan
+            </button></a>
+          <button onclick="myFunction()" class="icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
         </div>
       </div>
     </nav>
-    <div class="hero-image">
-      <div class="hero-text">
-        <h1>HERO IMAGE</h1>
-      </div>
+    <div class="hero-image"></div>
+    <div class="hero-text">
+      <h2>Peningkatan Kapasitas
+      </h2>
     </div>
-   
-    <div class="light-box">
-      <h5>Peningkatan kapasitas komunitas </br>dan sekolah</h5></div>
-      <div class="light-box">
-        <p class="paragraf">
-        Kegiatan yang dilakukan untuk peningkatan kapasitas tidak berjalan sesuai dengan perencanaan awal. Di tahun 2020 Covid-19 masuk ke Indonesia dan peningkatan kasus terjadi siginifikan diantara akhir 2020 dan pertengahan 2021. PMI harus beberapa kali melakukan lock down kantor, sehingga proses pengerjaan menjadi terganggu. Keputusan gubernur dari masing-masing provinsi yang mengeluarkan aturan ketat untuk penyelenggaraan proses pelatihan juga turut menunda pelaksanaan kegiatan dilapangan.</p>
-      </br>
-    <div>
-      <div class="parallax"></div>
-      <div class="paralax-text">
-        Peningkatan kapasitas di masyarakat sedikit berjalan dengan dibentuknya sibat di beberapa komunitas sasaran.
-      </div>
-      <div class="parallax2"></div>
-      <div class="paralax-text">
-        Tantangan yang cukup sigifikan dirasakan adalaha adanya pandemi ini. Antisipasi yang dilakukan dengan melakuan realokasi budget dan perubahan aktivitas.
-Aktivitas yang nyata terlihat adalah dengan perubahan kegiatan yang berfokus pada respon Covid-19.
-      </div>
-      <div class="parallax"></div>
-    </div>
+  </header>
+  <div class="light-box">
+    <h2>Peningkatan kapasitas komunitas </br> dan sekolah</h2>
+  </div>
 
-    <div class="light-box">
-      <h5>Peningkatan kapasitas Institusi (PMI)</h5>
-    </div>
+  <div class="light-box">
+    <p class="paragraf-top">
+      Kegiatan yang dilakukan untuk peningkatan kapasitas tidak berjalan sesuai dengan perencanaan awal. Di tahun 2020
+      Covid-19 masuk ke Indonesia dan peningkatan kasus terjadi siginifikan diantara akhir 2020 dan pertengahan 2021.
+      PMI harus beberapa kali melakukan lock down kantor, sehingga proses pengerjaan menjadi terganggu. Keputusan
+      gubernur dari masing-masing provinsi yang mengeluarkan aturan ketat untuk penyelenggaraan proses pelatihan juga
+      turut menunda pelaksanaan kegiatan dilapangan.</p></br></br>
+  </div></br></br></br></br></br></br>
+
+      <!-- Main Scrollytelling Section -->
+  <section id="scrollytelling">
+
+    <!-- BG Sticky -->
+    <figure style="height: 912px; top: 0px;">
+
+      <!-- This div just helps to center the images -->
+      <div style="text-align:center; height:100%; width:100%; overflow:hidden">
+        <!-- Individual Images -->
+        <img src="images/sekolah001.jpg" alt="Map1" width="100%" id="imgV1" style="opacity: 0; top: -10.6755px;">
+        <img src="images/sekolah002.jpg" alt="Map2" width="100%" id="imgV2" style="opacity: 0; top: -10.6755px;">
+        <img src="images/sekolah003.jpg" alt="Map3" width="100%" id="imgV3" style="opacity: 0; top: -10.6755px;">
+        <img src="images/sekolah004.jpg" alt="Map4" width="100%" id="imgV4" style="opacity: 0; top: -10.6755px;">
+        <img src="images/masy001.jpg" alt="Map5" width="100%" id="imgV5" style="opacity: 0; top: -10.6755px;">
+        <img src="images/masy002.jpg" alt="Map6" width="100%" id="imgV6" style="opacity: 0; top: -10.6755px;">
+        <img src="images/masy003.jpg" alt="Map7" width="100%" id="imgV7" style="opacity: 1; top: -10.6755px;">
+        <img src="images/masy004.jpg" alt="Map8" width="100%" id="imgV8" style="opacity: 1; top: -10.6755px;">
+      </div>
+    </figure>
+
+    <!-- Prose about the album. Each div is a  point about the different versions of the figure -->
+    <article>
+
+      <!-- Message #1 -->
+      <div class="step" data-scrollama-index="0" style="height: 2280px;">
+        <p>12 sekolah (7 di Tanggamus dan 5 di Manggarai) telah menyelenggarakan pelatihan sekolah siaga bencana bagi siswa.</p>
+      </div>
+      
+      <!-- Message #2 -->
+      <div class="step" data-scrollama-index="1" style="height: 2280px;">
+        <p>Menggunakan kurikulum pelatihan kebencanaan untuk sekolah dasar PMI, siswa diharapkan memiliki pengetahuan tentang bahaya, pengetahuan tentang bencana, memahami risiko di rumah, sekolah dan desa.</p>
+      </div>
+
+      <!-- Message #3 -->
+      <div class="step" data-scrollama-index="2" style="height: 2280px;">
+        <p>Pelatihan ini bertujuan agar para siswa memiliki pemahaman tentang kerentanan yang ada pada diri sendiri dan keluarganya.</p>
+      </div>
+
+      <!-- Message #4 -->
+      <div class="step" data-scrollama-index="3" style="height: 2280px;">
+        <p> Dan diharapkan juga para siswa untuk memiliki peningkatan kapasitas kesiapsiagaan bencana didalam diri mereka sendiri dan keluarga untuk mengurangi risiko bencana.</p>
+      </div>
+
+      <!-- Message #5 -->
+      <div class="step" data-scrollama-index="4" style="height: 2280px;">
+        <p>Difasilitasi oleh relawan PMI, 7 desa di Kabupaten Tanggamus dan 5 desa di Kabupaten Manggarai telah mengembangkan dan menguji rencana kontinjensi/SOP bencana berbasis masyarakat.</p>
+      </div>
+
+      <!-- Message #6 -->
+      <div class="step" data-scrollama-index="5" style="height: 2280px;">
+        <p>SOP ini dibuat untuk mendorong pemahaman SIBAT, perangkat desa, kelompok masyarakat dan anggota masyarakat peran dan fungsi masing-masing elemen masyarakat dalam penanggulangan bencana banjir ditingkat desa.</p>
+      </div>
+
+      <!-- Message #7 -->
+      <div class="step is-active" data-scrollama-index="6" style="height: 2280px;">
+        <p>SOP ini juga memperjelas alur tugas, wewenang, dan tanggung jawab setiap elemen masyarakat dalam Penanggulangan Bencana Banjir. </p>
+      </div>
+
+    </article>
+
+  </section>
+<div class="light-box">
+  <h2>Peningkatan kapasitas</br>institusi</h2>
+    <p class="paragraf">
+      Seperti kegiatan di masyarakat dan sekolah peningkatan kapasitas di PMI lokal juga sempat tidak berjalan dengan baik. Namun pendampingan masih dilakukan dari PMI pusat terkait kegiatan project dan respon covid.
+      PMI Tanggamus berhasil membuat Business continuities plan (BCP) terkait layanan yang diberikan selama masa pandemi Covid-19.
+      Rekruitmen juga dilakukan untuk relawan PMI dan diberikan pelatihan terkait ICBRR.</br>
+      Tantangan yang cukup sigifikan dirasakan adalah adanya pandemi. Antisipasi yang dilakukan dengan melakuan realokasi budget dan perubahan aktivitas.</p></br></br></br></br>
+  <div class="video">
+    <iframe width="100%" height="800px" src="https://www.youtube.com/embed/Yf3idRC2xpA" title="YouTube video player"
+      frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;"
+      allowfullscreen></iframe>
+  </div>
     <div class="light-box">
       <p class="paragraf">
-      </br></br>
-        Seperti kegiatan di masyarakat dan sekolah peningkatan kapasitas di PMI lokal juga sempat tidak berjalan dengan baik. Namun pendampingan masih dilakukan dari PMI pusat terkait kegiatan project dan respon covid.
-PMI Tanggamus berhasil membuat Business continuities plan (BCP) terkait layanan yang diberikan selama masa pandemi Covid-19.
-Rekruitmen juga dilakukan untuk relawan PMI dan diberikan pelatihan terkait ICBRR.
-      </p>
-    </div>
-    <div class="video">
-      <iframe
-        width="100%"
-        height="800px"
-        src="https://www.youtube.com/embed/Yf3idRC2xpA"
-        title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;"
-        allowfullscreen
-      ></iframe>
-    </div>
-    <div class="light-box">
-      <p class="paragraf">
-      </br>Tantangan yang cukup sigifikan dirasakan adalaha adanya pandemi ini. Antisipasi yang dilakukan dengan melakuan realokasi budget dan perubahan aktivitas.
-Aktivitas yang nyata terlihat adalah dengan perubahan kegiatan yang berfokus pada respon Covid-19.</br></br>
+      </br>
+Aktivitas yang nyata terlihat adalah dengan perubahan kegiatan yang berfokus pada respon Covid-19.</br>
 Pengembangan materi KIE dilakukan sebagai bentuk edukasi yang lebih mudah untuk dipahami bagi masyarakat, selain itu hotline covid-19 dibentuk dan dimotori oleh para relawan PMI. Siaran Radio menjadi salah satu yang merupakan kampanye perilaku hidup dan sehat selama covid-19.
-</br></br>
+</br>
 Berikut ini rangkuman kegiatan yang sudah dilakukan oleh PMI dilapangan.
       </p>
     </div>
-  </br></br>
+  </br></br></br></br>
     <iframe
     src="https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=1EVw_I-F-m3Zq0qNYeGO9Kij_-G6C6iv2ZDdAz2lsS1I&font=Default&lang=en&initial_zoom=2&height=800"
     height="800px"
     width="100%"
     frameborder="0"
   ></iframe>
-  <link
-  href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,400&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,400&display=swap"
-  rel="stylesheet"
-/>
+  <footer id="footer">
+    <a class="next-page" href="page3.html">
+      <button>Harapan kedepan untuk program FDRCSI-DRR</button>
+    </a>
+  </footer>
+  <script>
+    function myFunction() {
+      var x = document.getElementById("navbar");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+  </script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,300;0,400;0,700;1,400&family=Roboto:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet"> 
     <script src="https://unpkg.com/d3@5.9.1/dist/d3.min.js"></script>
     <script src="https://unpkg.com/intersection-observer"></script>
     <script src="./js/scrollama.min.js"></script>
     <script src="./js/sideScrolama.js"></script>
+      <!-- Scrollama javaScript -->
+    <script src="./js/intersection-observer"></script>
+    <script src="./js/scrollama"></script>
+      <!-- Scrollytelling JavaScript -->
+    <script type="text/javascript" src="./js/scrolly.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+    crossorigin="anonymous"></script>
+
   </body>
 </html>
